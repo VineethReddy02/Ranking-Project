@@ -1,0 +1,16 @@
+﻿
+@using Tsep.Models
+@model Tsep.Entities.CollegeDetails
+
+         @using(Html.BeginForm("College","Colleges"))
+         {
+         
+         <h1>Select College:</h1>
+            @Html.DropDownListFor(m=>m.college.RowKey,Model.Colleges,new  {@class = "select" })
+             
+         <div>
+            <p></p>
+             <input type="submit" value="Get Details"/>
+         </div>
+         }
+        

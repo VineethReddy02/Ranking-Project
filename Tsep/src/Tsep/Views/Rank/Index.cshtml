@@ -1,0 +1,27 @@
+﻿
+        <h1>Predictor</h1>
+        <p><b>Group Total: </b>It is Your IPE Total of both the Years Excluding Languages and including Practicals.(Out Of 600)</p>
+
+        @using (Html.BeginForm("Getdata", "Rank"))
+        {
+            <table>
+                <tr>
+                    <td>
+                        <input class="text-feild" data-val="true" data-val-required="The GroupTotal field is required." id="GroupTotal" name="GroupTotal" placeholder="Group Total" type="text"/>
+			
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="text-feild" data-val="true" data-val-required="The Eamcet Total field is required." id="EamcetTotal" name="EamcetTotal" placeholder="Eamcet Total" type="text"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Save" value="Predict">
+                    </td>
+                </tr>
+            </table>
+        }
+
